@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+  <p align="center">A GraphQL APIs built with <a href="https://docs.nestjs.com/" target="_blank">Nest Js framework</a>, <a href="https://graphql.org/" target="_blank">GraphQL</a>, <a href="https://www.prisma.io/" target="_blank">Prisma</a> for building efficient and scalable server-side  TODO application.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
@@ -24,13 +24,26 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Simple Todo Graph APIs](https://github.com/nestjs/nest) builts with Nest Js-GraphQL, Prisma and Nest framework
 
 ## Installation
 
 ```bash
 $ npm install
 ```
+## Set Up Containerized PostGres Databse
+
+```bash
+# pull and run images
+$ docker compose up
+
+# set up your pgadmin server with derived hostname 
+$ docker inspect ${postgres container id}
+
+```
+## Launch PgAdmin 
+- [PgAdmin Server](http://localhost:5050/browser/)
+
 
 ## Running the app
 
@@ -41,9 +54,9 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
 ```
+
+
 
 ## Test
 
@@ -60,13 +73,12 @@ $ npm run test:cov
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Olasunkanmi Olayinka .O](https://kamilmysliwiec.com)
+- LinkedIn - [Olasunkanmi Olayinka](https://www.linkedin.com/in/olayinka-olasunkanmi/)
+- Twitter - [@AgbaKhoder](https://twitter.com/AgbaKhoder)
 
 ## License
 
